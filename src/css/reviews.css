@@ -53,7 +53,7 @@ body {
   @media only screen and (min-width: 1440px) {
     .container {
       max-width: 1440px;
-      padding: 0;
+     
     }
   }
   
@@ -74,7 +74,7 @@ body {
   }
   
   .reviews-item {
-    width: 294px;
+   
     min-height: 302px;
     padding: 36px 24px;
     border: 1px solid #fafafa33;
@@ -115,7 +115,7 @@ body {
   .reviews-text {
     line-height: 1.5;
     letter-spacing: -0.02em;
-    /* overflow: hidden; */
+    overflow: hidden;
     color: #fafafa99;
   }
   
@@ -137,6 +137,14 @@ body {
     height: 52px;
     background-color: var(--bg-color);
     transition: border-color var(--cubic);
+  }
+
+  .swiper-button-prev {
+    transform: rotate(180deg);
+  }
+  .reviews-btn:focus,
+  .reviews-btn:hover {
+    background-color: var(--light-grey);
   }
   
   @media screen and (min-width: 768px) {
@@ -166,6 +174,7 @@ body {
     }
   }
   
+
   .reviews-btn:disabled {
     border: 1px solid #fafafa33;
     cursor: no-drop;
@@ -175,7 +184,7 @@ body {
     stroke: #fafafa33;
   }
   
-  /* .reviews-plug {
+  .reviews-plug {
     margin: 0 auto;
     font-size: 30px;
-  } */
+  }
