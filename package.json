@@ -8,7 +8,7 @@
     "build": "vite build --base=/my-malibu-project/",
     "preview": "vite preview"
   },
-  "devDependencies": {
+  "devDependencies": { 
     "glob": "^8.1.0",
     "vite": "^4.5.2"
   },
