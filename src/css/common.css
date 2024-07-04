@@ -1,0 +1,39 @@
+:root {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  
+    color: #fafafa;
+    background-color: #1c1d20;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+  }
+  button {
+    cursor: pointer;
+    border: none;
+  }
+  
+  section{
+    background-color: #1c1d20;
+  }
+  
+  
