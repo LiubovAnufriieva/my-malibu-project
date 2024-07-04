@@ -1,5 +1,7 @@
 /* mobile fluid layout, Резиновая верстка до 375px*/
-
+body {
+  margin: 0;
+}
 
 .reviews-section {
     max-width: 374.98px;
@@ -43,8 +45,7 @@
   @media only screen and (min-width: 768px) {
     .container {
       max-width: 768px;
-      padding-right: 32px;
-      padding-left: 32px;
+      padding: 0 32px;
     }
   }
   
@@ -68,6 +69,7 @@
   }
   
   .reviews-list {
+    
     margin-bottom: 32px;
   }
   
@@ -113,7 +115,7 @@
   .reviews-text {
     line-height: 1.5;
     letter-spacing: -0.02em;
-    overflow: hidden;
+    /* overflow: hidden; */
     color: #fafafa99;
   }
   
@@ -173,7 +175,7 @@
     stroke: #fafafa33;
   }
   
-  .reviews-plug {
+  /* .reviews-plug {
     margin: 0 auto;
     font-size: 30px;
-  }
+  } */

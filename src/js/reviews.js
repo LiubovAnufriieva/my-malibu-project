@@ -79,15 +79,15 @@ const renderReviews = async () => {
     const markup = reviews
       .map(
         ({ _id, author, avatar_url, review }) => `
-  
-  <li class="reviews-item swiper-slide" data="${_id}">
+  <div class="swiper-slide">
+  <li class="reviews-item " data="${_id}">
   <img class="reviews-img" src="${avatar_url}" alt="${author}"/>
   
   <p class="reviews-text">${review}</p>
   <h2 class="reviews-subtitle">${author}</h2>
 
   </li>
-  
+  </div>
   `
       )
       .join('');
@@ -101,4 +101,4 @@ const renderReviews = async () => {
   }
 };
 
-renderReviews(currentId);
+renderReviews();
