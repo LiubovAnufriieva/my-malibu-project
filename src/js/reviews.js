@@ -51,7 +51,6 @@ const BASE_URL = 'https://portfolio-js.b.goit.study/api';
 const END_POINT = '/reviews';
 
 const url = `${BASE_URL}${END_POINT}`;
-
 let currentId = 1;
 
 const selectors = {
