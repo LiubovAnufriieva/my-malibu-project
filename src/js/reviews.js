@@ -80,7 +80,7 @@ const renderReviews = async () => {
         ({ _id, author, avatar_url, review }) => `
   <div class="swiper-slide">
   <li class="reviews-item " data="${_id}">
-  <img class="reviews-img" src="${avatar_url}" alt="${author}"/>
+  <img class="reviews-img" src="${avatar_url}" alt="${author}" loading="lazy"/>
   
   <p class="reviews-text">${review}</p>
   <h2 class="reviews-subtitle">${author}</h2>
@@ -93,11 +93,36 @@ const renderReviews = async () => {
 
     selectors.container.insertAdjacentHTML('beforeend', markup);
   } catch (error) {
+    
     selectors.container.insertAdjacentHTML(
       'afterbegin',
       `<p class="reviews-error-text">Not found</p>`
     );
+    showNotification(error.message);
   }
 };
 
 renderReviews();
+
+// Function: show notification
+const showNotification = msg => {
+  iziToast.settings({
+      timeout: 5000,
+      titleColor: '#fff',
+      position: 'topRight',
+      messageColor: '#fff',
+      icon: '',
+      // close: false,
+  });
+  iziToast.error({
+      message: msg,
+      class: 'error-notification',
+      timeout: 5000,
+      titleColor: '#fff',
+      position: 'topRight',
+      backgroundColor: '#EF4040',
+      messageColor: '#fff',
+      progressBarColor: '#B51B1B',
+      close: true,
+  });
+};
