@@ -57,7 +57,7 @@ const selectors = {
 
 async function fetchReviews(id) {
   try {
-    const response = await axios.get('https://portfolio-js.b.goit.study/api/review', { params: { id } });
+    const response = await axios.get('https://portfolio-js.b.goit.study/api/reviews', { params: { id } });
 
     if (response.status !== 200) {
       throw new Error(response.status);
