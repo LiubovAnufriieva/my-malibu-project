@@ -47,10 +47,6 @@ const swiperReviews = new Swiper('.reviews-wrapper', {
   },
 });
 
-const BASE_URL = 'https://portfolio-js.b.goit.study/api';
-const END_POINT = '/reviews';
-
-const url = `${BASE_URL}${END_POINT}`;
 let currentId = 1;
 
 const selectors = {
@@ -61,7 +57,7 @@ const selectors = {
 
 async function fetchReviews(id) {
   try {
-    const response = await axios.get(url, { params: { id } });
+    const response = await axios.get('https://portfolio-js.b.goit.study/api/review', { params: { id } });
 
     if (response.status !== 200) {
       throw new Error(response.status);
@@ -72,7 +68,7 @@ async function fetchReviews(id) {
   }
 }
 
-const renderReviews = async () => {
+async function renderReviews() {
   try {
     const reviews = await fetchReviews(currentId);
     const markup = reviews
@@ -112,7 +108,7 @@ const showNotification = msg => {
       position: 'topRight',
       messageColor: '#fff',
       icon: '',
-      // close: false,
+      close: false,
   });
   iziToast.error({
       message: msg,
