@@ -2,10 +2,8 @@ import{S as l,N as u,K as d,M as p,i as a,a as f}from"./assets/vendor-1b712bb3.j
   <div class="swiper-slide">
   <li class="reviews-item " data="${i}">
   <img class="reviews-img" src="${e}" alt="${o}" loading="lazy"/>
-  
-  <p class="reviews-text">${t}</p>
   <h2 class="reviews-subtitle">${o}</h2>
-
+  <p class="reviews-text">${t}</p>
   </li>
   </div>
   `).join("");c.container.insertAdjacentHTML("beforeend",r)}catch(s){c.container.insertAdjacentHTML("afterbegin",'<p class="reviews-error-text">Not found</p>'),v(s.message)}}g();const v=s=>{a.settings({timeout:5e3,titleColor:"#fff",position:"topRight",messageColor:"#fff",icon:"",close:!1}),a.error({message:s,class:"error-notification",timeout:5e3,titleColor:"#fff",position:"topRight",backgroundColor:"#EF4040",messageColor:"#fff",progressBarColor:"#B51B1B",close:!0})};
