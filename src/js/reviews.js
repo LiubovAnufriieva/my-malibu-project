@@ -66,7 +66,7 @@ async function fetchReviews(id) {
   } catch (error) {
     throw new Error(`Fetching reviews failed: ${error.message}`);
   }
-}
+};
 
 async function renderReviews() {
   try {
@@ -103,20 +103,14 @@ const showNotification = msg => {
   iziToast.settings({
       timeout: 5000,
       titleColor: '#fff',
-      position: 'topRight',
+      position: 'center',
       messageColor: '#fff',
       icon: '',
-      close: false,
   });
   iziToast.error({
       message: msg,
-      class: 'error-notification',
       timeout: 5000,
-      titleColor: '#fff',
-      position: 'topRight',
+      position: 'center',
       backgroundColor: '#EF4040',
-      messageColor: '#fff',
-      progressBarColor: '#B51B1B',
-      close: true,
   });
 };

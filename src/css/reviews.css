@@ -137,9 +137,16 @@ body {
   .swiper-button-prev {
     transform: rotate(180deg);
   }
+
+  .reviews-item:focus,
+  .reviews-item:hover  {
+    border-color: #fafafa;
+  }
+
   .reviews-btn:focus,
   .reviews-btn:hover {
     background-color: #242527;
+    border-color: #fafafa;
   }
   
   @media screen and (min-width: 768px) {
