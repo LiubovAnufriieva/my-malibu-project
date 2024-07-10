@@ -19,11 +19,11 @@ const swiperReviews = new Swiper('.reviews-wrapper', {
 
   keyboard: {
     enabled: true,
-    onlyInViewport: false,
+    onlyInViewport: true,
   },
 
   mousewheel: {
-    invert: true,
+    invert: false,
   },
 
   breakpoints: {
