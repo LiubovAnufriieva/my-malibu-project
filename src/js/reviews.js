@@ -77,10 +77,8 @@ async function renderReviews() {
   <div class="swiper-slide">
   <li class="reviews-item " data="${_id}">
   <img class="reviews-img" src="${avatar_url}" alt="${author}" loading="lazy"/>
-  
-  <p class="reviews-text">${review}</p>
   <h2 class="reviews-subtitle">${author}</h2>
-
+  <p class="reviews-text">${review}</p>
   </li>
   </div>
   `
