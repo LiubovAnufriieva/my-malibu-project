@@ -4,3 +4,11 @@ https://github.com/TyronNIKO/Malibu-developers/commit/94b6dbe8b5d61f9e8c9d654ac3
 https://github.com/TyronNIKO/Malibu-developers/pull/34
 https://github.com/TyronNIKO/Malibu-developers/commit/17b6d6001a56070cfa273d21214374aea02abfae
 https://github.com/TyronNIKO/Malibu-developers/pull/45
+https://github.com/TyronNIKO/Malibu-developers/commit/4686edf1ce3d44bd7d726b990545668a84290f35
+
+
+https://github.com/TyronNIKO/Malibu-developers/pull/8
+https://github.com/TyronNIKO/Malibu-developers/pull/15
+https://github.com/TyronNIKO/Malibu-developers/pull/34
+https://github.com/TyronNIKO/Malibu-developers/pull/45
+https://github.com/TyronNIKO/Malibu-developers/pull/63
